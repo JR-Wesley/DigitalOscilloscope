@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>908</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>390</y>
+      <width>631</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>frequency(6103xHz)/ bit rate(6163xbps)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="spinBox_A1"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>wave form</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QSpinBox" name="spinBox_F2"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>phase/duty cycle (0-360 °)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QSpinBox" name="spinBox_P1"/>
+     </item>
+     <item row="3" column="2">
+      <widget class="QSpinBox" name="spinBox_F1"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>amplitude (0-2047 mV)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QComboBox" name="comboBox_1"/>
+     </item>
+     <item row="8" column="3">
+      <widget class="QSpinBox" name="spinBox_P2"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QComboBox" name="comboBox_2"/>
+     </item>
+     <item row="8" column="1">
+      <widget class="QSpinBox" name="spinBox_A2"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QComboBox" name="comboBox_3"/>
+     </item>
+     <item row="10" column="0">
+      <widget class="QComboBox" name="comboBox_4"/>
+     </item>
+     <item row="9" column="1">
+      <widget class="QSpinBox" name="spinBox_A3"/>
+     </item>
+     <item row="10" column="1">
+      <widget class="QSpinBox" name="spinBox_A4"/>
+     </item>
+     <item row="9" column="2">
+      <widget class="QSpinBox" name="spinBox_F3"/>
+     </item>
+     <item row="10" column="2">
+      <widget class="QSpinBox" name="spinBox_F4"/>
+     </item>
+     <item row="9" column="3">
+      <widget class="QSpinBox" name="spinBox_P3"/>
+     </item>
+     <item row="10" column="3">
+      <widget class="QSpinBox" name="spinBox_P4"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="startBut">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopBut">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停止</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>370</y>
+      <width>911</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="genBut">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>400</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>download</string>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="plot_time" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>551</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="plot_freq" native="true">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>341</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_mode">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>460</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>310</y>
+      <width>271</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
